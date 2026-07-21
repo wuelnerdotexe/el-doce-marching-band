@@ -1,650 +1,1116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revelación de Uniforme - "El Doce" Marching Band | Colegio "Las Doce Perlas"</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Revelación de Uniforme - "El Doce" Marching Band | Colegio "Las Doce
+      Perlas"
+    </title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        gold: {
-                            DEFAULT: '#C5A059',
-                            light: '#E6C687',
-                            dark: '#9A7736'
-                        },
-                        charcoal: '#121316',
-                        darkBg: '#0B0C0E',
-                        cardBg: '#181A1F',
-                        cream: '#F4EFEA',
-                        greyAccent: '#9CA3AF'
-                    },
-                    fontFamily: {
-                        cinzel: ['Cinzel', 'serif'],
-                        montserrat: ['Montserrat', 'sans-serif'],
-                        playfair: ['Playfair Display', 'serif']
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                DEFAULT: "#C5A059",
+                light: "#E6C687",
+                dark: "#9A7736",
+              },
+              charcoal: "#121316",
+              darkBg: "#0B0C0E",
+              cardBg: "#181A1F",
+              cream: "#F4EFEA",
+              greyAccent: "#9CA3AF",
+            },
+            fontFamily: {
+              cinzel: ["Cinzel", "serif"],
+              montserrat: ["Montserrat", "sans-serif"],
+              playfair: ["Playfair Display", "serif"],
+            },
+          },
+        },
+      };
     </script>
-    
+
     <style>
-        body {
-            background-color: #0B0C0E;
-            color: #F4EFEA;
-            font-family: 'Montserrat', sans-serif;
-            overflow-x: hidden;
-        }
+      body {
+        background-color: #0b0c0e;
+        color: #f4efea;
+        font-family: "Montserrat", sans-serif;
+        overflow-x: hidden;
+      }
 
-        .gold-gradient-text {
-            background: linear-gradient(135deg, #FFF0D0 0%, #C5A059 50%, #9A7736 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+      .gold-gradient-text {
+        background: linear-gradient(
+          135deg,
+          #fff0d0 0%,
+          #c5a059 50%,
+          #9a7736 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
 
-        .gold-border-glow {
-            box-shadow: 0 0 25px rgba(197, 160, 89, 0.15);
-            border: 1px solid rgba(197, 160, 89, 0.3);
-        }
+      .gold-border-glow {
+        box-shadow: 0 0 25px rgba(197, 160, 89, 0.15);
+        border: 1px solid rgba(197, 160, 89, 0.3);
+      }
 
-        .glass-panel {
-            background: rgba(24, 26, 31, 0.85);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
+      .glass-panel {
+        background: rgba(24, 26, 31, 0.85);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
 
-        .badge-pulse {
-            animation: pulse-border 2s infinite;
-        }
+      .badge-pulse {
+        animation: pulse-border 2s infinite;
+      }
 
-        @keyframes pulse-border {
-            0% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.4); }
-            70% { box-shadow: 0 0 0 12px rgba(197, 160, 89, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0); }
+      @keyframes pulse-border {
+        0% {
+          box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.4);
         }
+        70% {
+          box-shadow: 0 0 0 12px rgba(197, 160, 89, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(197, 160, 89, 0);
+        }
+      }
 
-        /* Large heavy headline typography utility */
-        .heavy-title {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 900;
-            letter-spacing: -0.03em;
-            text-transform: uppercase;
-        }
+      /* Large heavy headline typography utility */
+      .heavy-title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+      }
 
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0B0C0E;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #C5A059;
-            border-radius: 4px;
-        }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0b0c0e;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c5a059;
+        border-radius: 4px;
+      }
     </style>
-</head>
-<body class="selection:bg-gold selection:text-black">
-
-    <header class="fixed top-0 left-0 w-full z-50 glass-panel border-b border-white/10 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-full bg-gold/20 border border-gold flex items-center justify-center font-cinzel font-black text-gold text-xl">
-                    XII
-                </div>
-                <div>
-                    <span class="block text-xs font-bold uppercase tracking-widest text-gold">Colegio Las Doce Perlas</span>
-                    <span class="block text-sm font-black tracking-wider text-white">EL DOCE MARCHING BAND</span>
-                </div>
-            </div>
-
-            <!-- Quick Navigation Menu -->
-            <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-300">
-                <a href="#conceptos" class="hover:text-gold transition-colors">01. Conceptos</a>
-                <a href="#revelacion" class="hover:text-gold transition-colors">02. Uniformes</a>
-                <a href="#niveles" class="hover:text-gold transition-colors">03. Niveles</a>
-                <a href="#peinado" class="hover:text-gold transition-colors">04. Peinado Oficial</a>
-            </nav>
-
-            <a href="#revelacion" class="bg-gold hover:bg-gold-light text-black px-5 py-2.5 rounded-full font-extrabold text-xs tracking-wider uppercase transition-all duration-300 shadow-lg hover:scale-105">
-                Ver Uniforme
-            </a>
+  </head>
+  <body class="selection:bg-gold selection:text-black">
+    <header
+      class="fixed top-0 left-0 w-full z-50 glass-panel border-b border-white/10 transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-3">
+          <div
+            class="w-10 h-10 rounded-full bg-gold/20 border border-gold flex items-center justify-center font-cinzel font-black text-gold text-xl"
+          >
+            XII
+          </div>
+          <div>
+            <span
+              class="block text-xs font-bold uppercase tracking-widest text-gold"
+              >Colegio Las Doce Perlas</span
+            >
+            <span class="block text-sm font-black tracking-wider text-white"
+              >EL DOCE MARCHING BAND</span
+            >
+          </div>
         </div>
+
+        <!-- Quick Navigation Menu -->
+        <nav
+          class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-300"
+        >
+          <a href="#conceptos" class="hover:text-gold transition-colors"
+            >01. Conceptos</a
+          >
+          <a href="#revelacion" class="hover:text-gold transition-colors"
+            >02. Uniformes</a
+          >
+          <a href="#niveles" class="hover:text-gold transition-colors"
+            >03. Niveles</a
+          >
+          <a href="#peinado" class="hover:text-gold transition-colors"
+            >04. Peinado Oficial</a
+          >
+        </nav>
+
+        <a
+          href="#revelacion"
+          class="bg-gold hover:bg-gold-light text-black px-5 py-2.5 rounded-full font-extrabold text-xs tracking-wider uppercase transition-all duration-300 shadow-lg hover:scale-105"
+        >
+          Ver Uniforme
+        </a>
+      </div>
     </header>
 
-    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 min-h-screen flex items-center justify-center overflow-hidden">
-        <!-- Background subtle lighting -->
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold/15 via-darkBg to-darkBg pointer-events-none"></div>
-        <div class="absolute -top-40 -right-40 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
-        
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            
-            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/5 border border-gold/30 mb-8 backdrop-blur-md">
-                <i class="fa-solid font-bold text-gold fa-crown text-xs"></i>
-                <span class="text-xs font-extrabold uppercase tracking-widest text-gold-light">Presentación Oficial a Padres de Familia</span>
-            </div>
+    <section
+      class="relative pt-32 pb-20 md:pt-40 md:pb-28 min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      <!-- Background subtle lighting -->
+      <div
+        class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold/15 via-darkBg to-darkBg pointer-events-none"
+      ></div>
+      <div
+        class="absolute -top-40 -right-40 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"
+      ></div>
 
-            <h1 class="heavy-title text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-none tracking-tight mb-6 text-white">
-                EL DOCE <br>
-                <span class="gold-gradient-text font-cinzel">MARCHING BAND</span>
-            </h1>
-
-            <p class="text-lg sm:text-xl md:text-2xl font-light text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-                Presentación de la nueva vestimenta oficial para los integrantes del <span class="text-white font-bold">Colegio Evangélico Privado Mixto "Las Doce Perlas"</span>.
-            </p>
-
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12">
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                    <span class="block text-gold text-2xl font-black font-cinzel">1850</span>
-                    <span class="text-xs uppercase font-bold text-gray-400">Inspiración Británica</span>
-                </div>
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                    <span class="block text-gold text-2xl font-black font-cinzel">OLD MONEY</span>
-                    <span class="text-xs uppercase font-bold text-gray-400">Elegancia Atemporal</span>
-                </div>
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                    <span class="block text-gold text-2xl font-black font-cinzel">2 NIVELES</span>
-                    <span class="text-xs uppercase font-bold text-gray-400">Primario & Básico</span>
-                </div>
-                <div class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                    <span class="block text-gold text-2xl font-black font-cinzel">MODERNO</span>
-                    <span class="text-xs uppercase font-bold text-gray-400">Minimalismo Juvenil</span>
-                </div>
-            </div>
-
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#conceptos" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gold hover:bg-gold-light text-black font-black text-sm uppercase tracking-widest transition-all duration-300 transform hover:-translate-y-1 shadow-xl">
-                    Explorar Conceptos del Diseño <i class="fa-solid fa-arrow-down ml-2"></i>
-                </a>
-                <a href="#revelacion" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-sm uppercase tracking-widest border border-white/20 backdrop-blur-md transition-all duration-300">
-                    Ir a la Galería
-                </a>
-            </div>
+      <div
+        class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10"
+      >
+        <div
+          class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/5 border border-gold/30 mb-8 backdrop-blur-md"
+        >
+          <i class="fa-solid font-bold text-gold fa-crown text-xs"></i>
+          <span
+            class="text-xs font-extrabold uppercase tracking-widest text-gold-light"
+            >Presentación Oficial a Padres de Familia</span
+          >
         </div>
+
+        <h1
+          class="heavy-title text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-none tracking-tight mb-6 text-white"
+        >
+          EL DOCE <br />
+          <span class="gold-gradient-text font-cinzel">MARCHING BAND</span>
+        </h1>
+
+        <p
+          class="text-lg sm:text-xl md:text-2xl font-light text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
+        >
+          Presentación de la nueva vestimenta oficial para los integrantes del
+          <span class="text-white font-bold"
+            >Colegio Evangélico Privado Mixto "Las Doce Perlas"</span
+          >.
+        </p>
+
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12"
+        >
+          <div
+            class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm"
+          >
+            <span class="block text-gold text-2xl font-black font-cinzel"
+              >1850</span
+            >
+            <span class="text-xs uppercase font-bold text-gray-400"
+              >Inspiración Británica</span
+            >
+          </div>
+          <div
+            class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm"
+          >
+            <span class="block text-gold text-2xl font-black font-cinzel"
+              >OLD MONEY</span
+            >
+            <span class="text-xs uppercase font-bold text-gray-400"
+              >Elegancia Atemporal</span
+            >
+          </div>
+          <div
+            class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm"
+          >
+            <span class="block text-gold text-2xl font-black font-cinzel"
+              >2 NIVELES</span
+            >
+            <span class="text-xs uppercase font-bold text-gray-400"
+              >Primario & Básico</span
+            >
+          </div>
+          <div
+            class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm"
+          >
+            <span class="block text-gold text-2xl font-black font-cinzel"
+              >MODERNO</span
+            >
+            <span class="text-xs uppercase font-bold text-gray-400"
+              >Minimalismo Juvenil</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+          <a
+            href="#conceptos"
+            class="w-full sm:w-auto px-8 py-4 rounded-full bg-gold hover:bg-gold-light text-black font-black text-sm uppercase tracking-widest transition-all duration-300 transform hover:-translate-y-1 shadow-xl"
+          >
+            Explorar Conceptos del Diseño
+            <i class="fa-solid fa-arrow-down ml-2"></i>
+          </a>
+          <a
+            href="#revelacion"
+            class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold text-sm uppercase tracking-widest border border-white/20 backdrop-blur-md transition-all duration-300"
+          >
+            Ir a la Galería
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section id="conceptos" class="py-24 bg-charcoal relative border-t border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-gold font-extrabold text-xs uppercase tracking-widest block mb-2">Fundamentos del Diseño</span>
-                <h2 class="heavy-title text-3xl sm:text-5xl md:text-6xl text-white">
-                    CONCEPTOS DEL <span class="gold-gradient-text">UNIFORME</span>
-                </h2>
-                <p class="text-gray-400 text-sm sm:text-base mt-4 font-normal">
-                    Antes de develar la vestimenta, exponemos la filosofía y los pilares estéticos sobre los cuales se ha erigido la nueva imagen de "El Doce".
-                </p>
-            </div>
-
-            <!-- 4 Grid Cards showcasing the specific concepts required -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- Concept 1 -->
-                <div class="p-8 rounded-2xl glass-panel gold-border-glow relative group hover:border-gold/60 transition-all duration-300">
-                    <div class="flex items-start justify-between mb-6">
-                        <div class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl font-black">
-                            <i class="fa-solid fa-monument"></i>
-                        </div>
-                        <span class="text-4xl font-black font-cinzel text-white/20 group-hover:text-gold/40 transition-colors">01</span>
-                    </div>
-                    <h3 class="text-xl sm:text-2xl font-black uppercase text-white mb-3 tracking-wide">
-                        Inspiración Británica de 1850
-                    </h3>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        El diseño toma como base histórica la sastrería marcial británica de mediados del siglo XIX. Se destacan los cuellos estructurados tipo mandarín, la botonadura dorada alineada y los cortes sobrios que transmiten disciplina, jerarquía y honorabilidad en cada desfile.
-                    </p>
-                </div>
-
-                <!-- Concept 2 -->
-                <div class="p-8 rounded-2xl glass-panel gold-border-glow relative group hover:border-gold/60 transition-all duration-300">
-                    <div class="flex items-start justify-between mb-6">
-                        <div class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl font-black">
-                            <i class="fa-solid fa-gem"></i>
-                        </div>
-                        <span class="text-4xl font-black font-cinzel text-white/20 group-hover:text-gold/40 transition-colors">02</span>
-                    </div>
-                    <h3 class="text-xl sm:text-2xl font-black uppercase text-white mb-3 tracking-wide">
-                        Tendencia Elegante "Old Money"
-                    </h3>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        Sigue las pautas estéticas actuales del estilo <span class="text-gold font-semibold">Old Money</span>, priorizando paletas de colores neutros de alto valor (negro, gris oxford, beige arena y acentos dorados). Un porte refinado sin ostentación recargada, enfocándose en la excelencia de la silueta.
-                    </p>
-                </div>
-
-                <!-- Concept 3 -->
-                <div class="p-8 rounded-2xl glass-panel gold-border-glow relative group hover:border-gold/60 transition-all duration-300">
-                    <div class="flex items-start justify-between mb-6">
-                        <div class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl font-black">
-                            <i class="fa-solid fa-feather-pointed"></i>
-                        </div>
-                        <span class="text-4xl font-black font-cinzel text-white/20 group-hover:text-gold/40 transition-colors">03</span>
-                    </div>
-                    <h3 class="text-xl sm:text-2xl font-black uppercase text-white mb-3 tracking-wide">
-                        Minimalista & Moderno
-                    </h3>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        Pensado y ajustado especialmente para la juventud y adolescencia de nuestra institución. Líneas puras, pliegues limpios y accesorios simplificados que otorgan ligereza de movimiento sin perder la rigurosidad militar de una marching band de élite.
-                    </p>
-                </div>
-
-                <!-- Concept 4 -->
-                <div class="p-8 rounded-2xl glass-panel gold-border-glow relative group hover:border-gold/60 transition-all duration-300">
-                    <div class="flex items-start justify-between mb-6">
-                        <div class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl font-black">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <span class="text-4xl font-black font-cinzel text-white/20 group-hover:text-gold/40 transition-colors">04</span>
-                    </div>
-                    <h3 class="text-xl sm:text-2xl font-black uppercase text-white mb-3 tracking-wide">
-                        Elegancia, Prestigio y Nueva Era
-                    </h3>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        Construye un hito de innovación institucional que proyecta respeto y distinción. Esta vestimenta marca el inicio de una nueva era gloriosa para la marca "El Doce", resguardando con orgullo la herencia y valores del <span class="text-white font-semibold">Colegio Evangélico Privado Mixto "Las Doce Perlas"</span>.
-                    </p>
-                </div>
-
-            </div>
+    <section
+      id="conceptos"
+      class="py-24 bg-charcoal relative border-t border-b border-white/5"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span
+            class="text-gold font-extrabold text-xs uppercase tracking-widest block mb-2"
+            >Fundamentos del Diseño</span
+          >
+          <h2 class="heavy-title text-3xl sm:text-5xl md:text-6xl text-white">
+            CONCEPTOS DEL <span class="gold-gradient-text">UNIFORME</span>
+          </h2>
+          <p class="text-gray-400 text-sm sm:text-base mt-4 font-normal">
+            Antes de develar la vestimenta, exponemos la filosofía y los pilares
+            estéticos sobre los cuales se ha erigido la nueva imagen de "El
+            Doce".
+          </p>
         </div>
+
+        <!-- 4 Grid Cards showcasing the specific concepts required -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Concept 1 -->
+          <div
+            class="p-8 rounded-2xl glass-panel gold-border-glow relative group hover:border-gold/60 transition-all duration-300"
+          >
+            <div class="flex items-start justify-between mb-6">
+              <div
+                class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl font-black"
+              >
+                <i class="fa-solid fa-monument"></i>
+              </div>
+              <span
+                class="text-4xl font-black font-cinzel text-white/20 group-hover:text-gold/40 transition-colors"
+                >01</span
+              >
+            </div>
+            <h3
+              class="text-xl sm:text-2xl font-black uppercase text-white mb-3 tracking-wide"
+            >
+              Inspiración Británica de 1850
+            </h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              El diseño toma como base histórica la sastrería marcial británica
+              de mediados del siglo XIX. Se destacan los cuellos estructurados
+              tipo mandarín, la botonadura dorada alineada y los cortes sobrios
+              que transmiten disciplina, jerarquía y honorabilidad en cada
+              desfile.
+            </p>
+          </div>
+
+          <!-- Concept 2 -->
+          <div
+            class="p-8 rounded-2xl glass-panel gold-border-glow relative group hover:border-gold/60 transition-all duration-300"
+          >
+            <div class="flex items-start justify-between mb-6">
+              <div
+                class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl font-black"
+              >
+                <i class="fa-solid fa-gem"></i>
+              </div>
+              <span
+                class="text-4xl font-black font-cinzel text-white/20 group-hover:text-gold/40 transition-colors"
+                >02</span
+              >
+            </div>
+            <h3
+              class="text-xl sm:text-2xl font-black uppercase text-white mb-3 tracking-wide"
+            >
+              Tendencia Elegante "Old Money"
+            </h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              Sigue las pautas estéticas actuales del estilo
+              <span class="text-gold font-semibold">Old Money</span>,
+              priorizando paletas de colores neutros de alto valor (negro, gris
+              oxford, beige arena y acentos dorados). Un porte refinado sin
+              ostentación recargada, enfocándose en la excelencia de la silueta.
+            </p>
+          </div>
+
+          <!-- Concept 3 -->
+          <div
+            class="p-8 rounded-2xl glass-panel gold-border-glow relative group hover:border-gold/60 transition-all duration-300"
+          >
+            <div class="flex items-start justify-between mb-6">
+              <div
+                class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl font-black"
+              >
+                <i class="fa-solid fa-feather-pointed"></i>
+              </div>
+              <span
+                class="text-4xl font-black font-cinzel text-white/20 group-hover:text-gold/40 transition-colors"
+                >03</span
+              >
+            </div>
+            <h3
+              class="text-xl sm:text-2xl font-black uppercase text-white mb-3 tracking-wide"
+            >
+              Minimalista & Moderno
+            </h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              Pensado y ajustado especialmente para la juventud y adolescencia
+              de nuestra institución. Líneas puras, pliegues limpios y
+              accesorios simplificados que otorgan ligereza de movimiento sin
+              perder la rigurosidad militar de una marching band de élite.
+            </p>
+          </div>
+
+          <!-- Concept 4 -->
+          <div
+            class="p-8 rounded-2xl glass-panel gold-border-glow relative group hover:border-gold/60 transition-all duration-300"
+          >
+            <div class="flex items-start justify-between mb-6">
+              <div
+                class="w-14 h-14 rounded-2xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl font-black"
+              >
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <span
+                class="text-4xl font-black font-cinzel text-white/20 group-hover:text-gold/40 transition-colors"
+                >04</span
+              >
+            </div>
+            <h3
+              class="text-xl sm:text-2xl font-black uppercase text-white mb-3 tracking-wide"
+            >
+              Elegancia, Prestigio y Nueva Era
+            </h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              Construye un hito de innovación institucional que proyecta respeto
+              y distinción. Esta vestimenta marca el inicio de una nueva era
+              gloriosa para la marca "El Doce", resguardando con orgullo la
+              herencia y valores del
+              <span class="text-white font-semibold"
+                >Colegio Evangélico Privado Mixto "Las Doce Perlas"</span
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="revelacion" class="py-24 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="px-3 py-1 rounded-full bg-gold/20 text-gold text-xs font-black uppercase tracking-widest border border-gold/30 inline-block mb-3">
-                    Gran Develación
-                </span>
-                <h2 class="heavy-title text-4xl sm:text-6xl text-white">
-                    NUESTRA <span class="gold-gradient-text">COLECCIÓN</span>
-                </h2>
-                <p class="text-gray-300 text-base mt-2">
-                    A continuación se presentan los uniformes oficiales diferenciados por nivel educativo.
-                </p>
-            </div>
-
-            <!-- Tab Buttons for Uniform Levels -->
-            <div class="flex justify-center mb-12">
-                <div class="inline-flex p-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md">
-                    <button id="btn-primario" onclick="switchTab('primario')" class="px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 bg-gold text-black shadow-lg">
-                        Nivel Primario (Gris & Negro)
-                    </button>
-                    <button id="btn-basico" onclick="switchTab('basico')" class="px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 text-gray-400 hover:text-white">
-                        Nivel Medio - Básico (Beige & Negro)
-                    </button>
-                </div>
-            </div>
-
-            <!-- UNIFORM 1: PRIMARIO (Negro con Gris) -->
-            <div id="tab-primario" class="block transition-all duration-500">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                    
-                    <!-- Left Column: Specs -->
-                    <div class="lg:col-span-5 space-y-6 order-2 lg:order-1">
-                        <div class="p-2 rounded-lg bg-gold/10 border border-gold/30 inline-block">
-                            <span class="text-xs font-black text-gold uppercase tracking-widest">Especificación Oficial</span>
-                        </div>
-                        <h3 class="heavy-title text-3xl sm:text-5xl text-white">
-                            NIVEL <span class="text-gold">PRIMARIO</span>
-                        </h3>
-                        <p class="text-xl text-gray-300 font-medium">
-                            Combinación Distintiva: <span class="text-white font-bold underline decoration-gold">Negro con Gris</span>
-                        </p>
-                        
-                        <div class="space-y-4 pt-2">
-                            <div class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10">
-                                <div class="text-gold text-xl pt-1"><i class="fa-solid fa-vest"></i></div>
-                                <div>
-                                    <h4 class="font-bold text-white text-sm uppercase">Chaqueta / Guerrero Gris Oxford</h4>
-                                    <p class="text-gray-400 text-xs mt-1">Confeccionada en lana fría gris estructurada, solapas sobrepuestas beige en hombros y botones dorados de alta gala grabados.</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10">
-                                <div class="text-gold text-xl pt-1"><i class="fa-solid fa-user-tie"></i></div>
-                                <div>
-                                    <h4 class="font-bold text-white text-sm uppercase">Pantalón / Falda Plisada Negra</h4>
-                                    <p class="text-gray-400 text-xs mt-1">Pantalón de vestir de corte recto satinado negro para varones y falda plisada negra con calcetas altas oscuras para señoritas.</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10">
-                                <div class="text-gold text-xl pt-1"><i class="fa-solid fa-award"></i></div>
-                                <div>
-                                    <h4 class="font-bold text-white text-sm uppercase">Bordado Institucional "XII"</h4>
-                                    <p class="text-gray-400 text-xs mt-1">Monograma en hilo dorado metálico sobre el pecho, haciendo alegoría al número romano 12 de la institución.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pt-4">
-                            <button onclick="openModal('input_file_2.png')" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center space-x-2">
-                                <i class="fa-solid fa-expand"></i>
-                                <span>Ver Imagen Nivel Primario a Pantalla Completa</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Right Column: Image Display -->
-                    <div class="lg:col-span-7 order-1 lg:order-2">
-                        <div class="relative rounded-3xl overflow-hidden border border-gold/40 shadow-2xl group cursor-pointer" onclick="openModal('input_file_2.png')">
-                            <img src="input_file_2.png" alt="Uniforme Nivel Primario Negro con Gris" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
-                                <div class="bg-black/60 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10">
-                                    <span class="text-xs font-bold text-gold uppercase tracking-wider"><i class="fa-solid fa-camera mr-2"></i> Fotografía Oficial - Uniforme Nivel Primario</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- UNIFORM 2: NIVEL MEDIO - CICLO BÁSICO (Negro con Beige) -->
-            <div id="tab-basico" class="hidden transition-all duration-500">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                    
-                    <!-- Left Column: Specs -->
-                    <div class="lg:col-span-5 space-y-6 order-2 lg:order-1">
-                        <div class="p-2 rounded-lg bg-gold/10 border border-gold/30 inline-block">
-                            <span class="text-xs font-black text-gold uppercase tracking-widest">Especificación Oficial</span>
-                        </div>
-                        <h3 class="heavy-title text-3xl sm:text-5xl text-white">
-                            NIVEL MEDIO <br><span class="text-gold">CICLO BÁSICO</span>
-                        </h3>
-                        <p class="text-xl text-gray-300 font-medium">
-                            Combinación Distintiva: <span class="text-white font-bold underline decoration-gold">Negro con Beige</span>
-                        </p>
-                        
-                        <div class="space-y-4 pt-2">
-                            <div class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10">
-                                <div class="text-gold text-xl pt-1"><i class="fa-solid fa-vest-patches"></i></div>
-                                <div>
-                                    <h4 class="font-bold text-white text-sm uppercase">Guerrero Negro Azabache</h4>
-                                    <p class="text-gray-400 text-xs mt-1">Chaqueta militar entallada negra con bordes reforzados y cuello alto tipo 1850, aportando máxima soberbia y presencia.</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10">
-                                <div class="text-gold text-xl pt-1"><i class="fa-solid fa-socks"></i></div>
-                                <div>
-                                    <h4 class="font-bold text-white text-sm uppercase">Pantalón / Falda Plisada Beige</h4>
-                                    <p class="text-gray-400 text-xs mt-1">Pantalón chino elegante beige camel para varones y falda plisada beige con cinturón de cuero negro y hebilla dorada para señoritas.</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10">
-                                <div class="text-gold text-xl pt-1"><i class="fa-solid fa-star"></i></div>
-                                <div>
-                                    <h4 class="font-bold text-white text-sm uppercase">Acentos Old Money</h4>
-                                    <p class="text-gray-400 text-xs mt-1">Contraste beige y negro con calzado tipo moca-loafer con herraje dorado y guantes blancos de parada militar.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pt-4">
-                            <button onclick="openModal('input_file_3.png')" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center space-x-2">
-                                <i class="fa-solid fa-expand"></i>
-                                <span>Ver Imagen Ciclo Básico a Pantalla Completa</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Right Column: Image Display -->
-                    <div class="lg:col-span-7 order-1 lg:order-2">
-                        <div class="relative rounded-3xl overflow-hidden border border-gold/40 shadow-2xl group cursor-pointer" onclick="openModal('input_file_3.png')">
-                            <img src="input_file_3.png" alt="Uniforme Nivel Medio Ciclo Básico Negro con Beige" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8">
-                                <div class="bg-black/60 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10">
-                                    <span class="text-xs font-bold text-gold uppercase tracking-wider"><i class="fa-solid fa-camera mr-2"></i> Fotografía Oficial - Nivel Medio (Ciclo Básico)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span
+            class="px-3 py-1 rounded-full bg-gold/20 text-gold text-xs font-black uppercase tracking-widest border border-gold/30 inline-block mb-3"
+          >
+            Gran Develación
+          </span>
+          <h2 class="heavy-title text-4xl sm:text-6xl text-white">
+            NUESTRA <span class="gold-gradient-text">COLECCIÓN</span>
+          </h2>
+          <p class="text-gray-300 text-base mt-2">
+            A continuación se presentan los uniformes oficiales diferenciados
+            por nivel educativo.
+          </p>
         </div>
+
+        <!-- Tab Buttons for Uniform Levels -->
+        <div class="flex justify-center mb-12">
+          <div
+            class="inline-flex p-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md"
+          >
+            <button
+              id="btn-primario"
+              onclick="switchTab('primario')"
+              class="px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 bg-gold text-black shadow-lg"
+            >
+              Nivel Primario (Gris & Negro)
+            </button>
+            <button
+              id="btn-basico"
+              onclick="switchTab('basico')"
+              class="px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 text-gray-400 hover:text-white"
+            >
+              Nivel Medio - Básico (Beige & Negro)
+            </button>
+          </div>
+        </div>
+
+        <!-- UNIFORM 1: PRIMARIO (Negro con Gris) -->
+        <div id="tab-primario" class="block transition-all duration-500">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Left Column: Specs -->
+            <div class="lg:col-span-5 space-y-6 order-2 lg:order-1">
+              <div
+                class="p-2 rounded-lg bg-gold/10 border border-gold/30 inline-block"
+              >
+                <span
+                  class="text-xs font-black text-gold uppercase tracking-widest"
+                  >Especificación Oficial</span
+                >
+              </div>
+              <h3 class="heavy-title text-3xl sm:text-5xl text-white">
+                NIVEL <span class="text-gold">PRIMARIO</span>
+              </h3>
+              <p class="text-xl text-gray-300 font-medium">
+                Combinación Distintiva:
+                <span class="text-white font-bold underline decoration-gold"
+                  >Negro con Gris</span
+                >
+              </p>
+
+              <div class="space-y-4 pt-2">
+                <div
+                  class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10"
+                >
+                  <div class="text-gold text-xl pt-1">
+                    <i class="fa-solid fa-vest"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white text-sm uppercase">
+                      Chaqueta / Guerrero Gris Oxford
+                    </h4>
+                    <p class="text-gray-400 text-xs mt-1">
+                      Confeccionada en lana fría gris estructurada, solapas
+                      sobrepuestas beige en hombros y botones dorados de alta
+                      gala grabados.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10"
+                >
+                  <div class="text-gold text-xl pt-1">
+                    <i class="fa-solid fa-user-tie"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white text-sm uppercase">
+                      Pantalón / Falda Plisada Negra
+                    </h4>
+                    <p class="text-gray-400 text-xs mt-1">
+                      Pantalón de vestir de corte recto satinado negro para
+                      varones y falda plisada negra con calcetas altas oscuras
+                      para señoritas.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10"
+                >
+                  <div class="text-gold text-xl pt-1">
+                    <i class="fa-solid fa-award"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white text-sm uppercase">
+                      Bordado Institucional "XII"
+                    </h4>
+                    <p class="text-gray-400 text-xs mt-1">
+                      Monograma en hilo dorado metálico sobre el pecho, haciendo
+                      alegoría al número romano 12 de la institución.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-4">
+                <button
+                  onclick="
+                    openModal(
+                      'https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/I_image.png',
+                    )
+                  "
+                  class="w-full sm:w-auto px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center space-x-2"
+                >
+                  <i class="fa-solid fa-expand"></i>
+                  <span>Ver Imagen Nivel Primario a Pantalla Completa</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Column: Image Display -->
+            <div class="lg:col-span-7 order-1 lg:order-2">
+              <div
+                class="relative rounded-3xl overflow-hidden border border-gold/40 shadow-2xl group cursor-pointer"
+                onclick="
+                  openModal(
+                    'https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/I_image.png',
+                  )
+                "
+              >
+                <img
+                  src="https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/I_image.png"
+                  alt="Uniforme Nivel Primario Negro con Gris"
+                  class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8"
+                >
+                  <div
+                    class="bg-black/60 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10"
+                  >
+                    <span
+                      class="text-xs font-bold text-gold uppercase tracking-wider"
+                      ><i class="fa-solid fa-camera mr-2"></i> Fotografía
+                      Oficial - Uniforme Nivel Primario</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UNIFORM 2: NIVEL MEDIO - CICLO BÁSICO (Negro con Beige) -->
+        <div id="tab-basico" class="hidden transition-all duration-500">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Left Column: Specs -->
+            <div class="lg:col-span-5 space-y-6 order-2 lg:order-1">
+              <div
+                class="p-2 rounded-lg bg-gold/10 border border-gold/30 inline-block"
+              >
+                <span
+                  class="text-xs font-black text-gold uppercase tracking-widest"
+                  >Especificación Oficial</span
+                >
+              </div>
+              <h3 class="heavy-title text-3xl sm:text-5xl text-white">
+                NIVEL MEDIO <br /><span class="text-gold">CICLO BÁSICO</span>
+              </h3>
+              <p class="text-xl text-gray-300 font-medium">
+                Combinación Distintiva:
+                <span class="text-white font-bold underline decoration-gold"
+                  >Negro con Beige</span
+                >
+              </p>
+
+              <div class="space-y-4 pt-2">
+                <div
+                  class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10"
+                >
+                  <div class="text-gold text-xl pt-1">
+                    <i class="fa-solid fa-vest-patches"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white text-sm uppercase">
+                      Guerrero Negro Azabache
+                    </h4>
+                    <p class="text-gray-400 text-xs mt-1">
+                      Chaqueta militar entallada negra con bordes reforzados y
+                      cuello alto tipo 1850, aportando máxima soberbia y
+                      presencia.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10"
+                >
+                  <div class="text-gold text-xl pt-1">
+                    <i class="fa-solid fa-socks"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white text-sm uppercase">
+                      Pantalón / Falda Plisada Beige
+                    </h4>
+                    <p class="text-gray-400 text-xs mt-1">
+                      Pantalón chino elegante beige camel para varones y falda
+                      plisada beige con cinturón de cuero negro y hebilla dorada
+                      para señoritas.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-start space-x-4 p-4 rounded-xl bg-white/5 border border-white/10"
+                >
+                  <div class="text-gold text-xl pt-1">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white text-sm uppercase">
+                      Acentos Old Money
+                    </h4>
+                    <p class="text-gray-400 text-xs mt-1">
+                      Contraste beige y negro con calzado tipo moca-loafer con
+                      herraje dorado y guantes blancos de parada militar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-4">
+                <button
+                  onclick="
+                    openModal(
+                      'https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/II_image.png',
+                    )
+                  "
+                  class="w-full sm:w-auto px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs uppercase tracking-widest transition-all flex items-center justify-center space-x-2"
+                >
+                  <i class="fa-solid fa-expand"></i>
+                  <span>Ver Imagen Ciclo Básico a Pantalla Completa</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Column: Image Display -->
+            <div class="lg:col-span-7 order-1 lg:order-2">
+              <div
+                class="relative rounded-3xl overflow-hidden border border-gold/40 shadow-2xl group cursor-pointer"
+                onclick="
+                  openModal(
+                    'https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/II_image.png',
+                  )
+                "
+              >
+                <img
+                  src="https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/II_image.png"
+                  alt="Uniforme Nivel Medio Ciclo Básico Negro con Beige"
+                  class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-8"
+                >
+                  <div
+                    class="bg-black/60 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10"
+                  >
+                    <span
+                      class="text-xs font-bold text-gold uppercase tracking-wider"
+                      ><i class="fa-solid fa-camera mr-2"></i> Fotografía
+                      Oficial - Nivel Medio (Ciclo Básico)</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="niveles" class="py-24 bg-charcoal border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
-                <div>
-                    <span class="text-gold font-extrabold text-xs uppercase tracking-widest block mb-2">Detalles Marciales</span>
-                    <h2 class="heavy-title text-3xl sm:text-5xl text-white">
-                        GALERÍA DE <span class="gold-gradient-text">ELEMENTOS</span>
-                    </h2>
-                </div>
-                <p class="text-gray-400 text-sm max-w-md mt-4 md:mt-0">
-                    Aptitud, distinción y detalles minuciosos confeccionados para la marcha de honor del Colegio "Las Doce Perlas".
-                </p>
-            </div>
-
-            <!-- Image Mosaic Grid showcasing provided assets -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                
-                <!-- Asset Card 1 -->
-                <div class="rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold/50 transition-all duration-300 group cursor-pointer" onclick="openModal('input_file_0.png')">
-                    <div class="h-72 overflow-hidden relative">
-                        <img src="input_file_0.png" alt="Detalles generales y tambor El Doce" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <span class="p-3 rounded-full bg-gold text-black"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <span class="text-gold text-xs font-bold uppercase tracking-widest">Instrumentación y Accesorios</span>
-                        <h4 class="text-lg font-bold text-white mt-1">Tarola de Gala y Lentes Old Money</h4>
-                        <p class="text-gray-400 text-xs mt-2">La tarola acabado piano negro con tipografía "El Doce XII" y lentes oscuros de pasta clásica para el sol.</p>
-                    </div>
-                </div>
-
-                <!-- Asset Card 2 -->
-                <div class="rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold/50 transition-all duration-300 group cursor-pointer" onclick="openModal('input_file_1.png')">
-                    <div class="h-72 overflow-hidden relative">
-                        <img src="input_file_1.png" alt="Bordados y acabados del uniforme" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <span class="p-3 rounded-full bg-gold text-black"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <span class="text-gold text-xs font-bold uppercase tracking-widest">Corte y Confección</span>
-                        <h4 class="text-lg font-bold text-white mt-1">Texturas y Bordado "XII"</h4>
-                        <p class="text-gray-400 text-xs mt-2">Acercamiento a las telas de gabardina fina, botones dorados de solapa y bordado romano directo en la prenda.</p>
-                    </div>
-                </div>
-
-                <!-- Asset Card 3 -->
-                <div class="rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold/50 transition-all duration-300 group cursor-pointer" onclick="openModal('input_file_2.png')">
-                    <div class="h-72 overflow-hidden relative">
-                        <img src="input_file_2.png" alt="Porte y marcialidad nivel primario" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <span class="p-3 rounded-full bg-gold text-black"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <span class="text-gold text-xs font-bold uppercase tracking-widest">Nivel Primario</span>
-                        <h4 class="text-lg font-bold text-white mt-1">Set Completo Gris Oxford</h4>
-                        <p class="text-gray-400 text-xs mt-2">Postura erguida y sobriedad marcial en la combinación primaria de clarinete y percusión.</p>
-                    </div>
-                </div>
-
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-16"
+        >
+          <div>
+            <span
+              class="text-gold font-extrabold text-xs uppercase tracking-widest block mb-2"
+              >Detalles Marciales</span
+            >
+            <h2 class="heavy-title text-3xl sm:text-5xl text-white">
+              GALERÍA DE <span class="gold-gradient-text">ELEMENTOS</span>
+            </h2>
+          </div>
+          <p class="text-gray-400 text-sm max-w-md mt-4 md:mt-0">
+            Aptitud, distinción y detalles minuciosos confeccionados para la
+            marcha de honor del Colegio "Las Doce Perlas".
+          </p>
         </div>
+
+        <!-- Image Mosaic Grid showcasing provided assets -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Asset Card 1 -->
+          <div
+            class="rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold/50 transition-all duration-300 group cursor-pointer"
+            onclick="
+              openModal(
+                'https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/III_image.png',
+              )
+            "
+          >
+            <div class="h-72 overflow-hidden relative">
+              <img
+                src="https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/III_image.png"
+                alt="Detalles generales y tambor El Doce"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span class="p-3 rounded-full bg-gold text-black"
+                  ><i class="fa-solid fa-magnifying-glass-plus"></i
+                ></span>
+              </div>
+            </div>
+            <div class="p-5">
+              <span
+                class="text-gold text-xs font-bold uppercase tracking-widest"
+                >Instrumentación y Accesorios</span
+              >
+              <h4 class="text-lg font-bold text-white mt-1">
+                Tarola de Gala y Lentes Old Money
+              </h4>
+              <p class="text-gray-400 text-xs mt-2">
+                La tarola acabado piano negro con tipografía "El Doce XII" y
+                lentes oscuros de pasta clásica para el sol.
+              </p>
+            </div>
+          </div>
+
+          <!-- Asset Card 2 -->
+          <div
+            class="rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold/50 transition-all duration-300 group cursor-pointer"
+            onclick="
+              openModal(
+                'https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/IV_image.png',
+              )
+            "
+          >
+            <div class="h-72 overflow-hidden relative">
+              <img
+                src="https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/IV_image.png"
+                alt="Bordados y acabados del uniforme"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span class="p-3 rounded-full bg-gold text-black"
+                  ><i class="fa-solid fa-magnifying-glass-plus"></i
+                ></span>
+              </div>
+            </div>
+            <div class="p-5">
+              <span
+                class="text-gold text-xs font-bold uppercase tracking-widest"
+                >Corte y Confección</span
+              >
+              <h4 class="text-lg font-bold text-white mt-1">
+                Texturas y Bordado "XII"
+              </h4>
+              <p class="text-gray-400 text-xs mt-2">
+                Acercamiento a las telas de gabardina fina, botones dorados de
+                solapa y bordado romano directo en la prenda.
+              </p>
+            </div>
+          </div>
+
+          <!-- Asset Card 3 -->
+          <div
+            class="rounded-2xl overflow-hidden glass-panel border border-white/10 hover:border-gold/50 transition-all duration-300 group cursor-pointer"
+            onclick="
+              openModal(
+                'https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/I_image.png',
+              )
+            "
+          >
+            <div class="h-72 overflow-hidden relative">
+              <img
+                src="https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/I_image.png"
+                alt="Porte y marcialidad nivel primario"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span class="p-3 rounded-full bg-gold text-black"
+                  ><i class="fa-solid fa-magnifying-glass-plus"></i
+                ></span>
+              </div>
+            </div>
+            <div class="p-5">
+              <span
+                class="text-gold text-xs font-bold uppercase tracking-widest"
+                >Nivel Primario</span
+              >
+              <h4 class="text-lg font-bold text-white mt-1">
+                Set Completo Gris Oxford
+              </h4>
+              <p class="text-gray-400 text-xs mt-2">
+                Postura erguida y sobriedad marcial en la combinación primaria
+                de clarinete y percusión.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="peinado" class="py-24 relative bg-darkBg border-t border-b border-gold/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Image Showcase (Image 33369 / input_file_4.png) -->
-                <div class="lg:col-span-6 relative">
-                    <div class="relative rounded-3xl overflow-hidden border-2 border-gold/50 shadow-2xl group cursor-pointer" onclick="openModal('input_file_4.png')">
-                        <img src="input_file_4.png" alt="Estudio de Peinado Sugerido para Damas El Doce" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700">
-                        <div class="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-gold/40">
-                            <span class="text-xs font-black text-gold uppercase tracking-widest"><i class="fa-solid fa-scissors mr-2"></i> GUÍA OFICIAL DE PROTOCOLO</span>
-                        </div>
-                    </div>
-                </div>
+    <section
+      id="peinado"
+      class="py-24 relative bg-darkBg border-t border-b border-gold/20"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Left Image Showcase (Image 33369 / input_file_4.png) -->
+          <div class="lg:col-span-6 relative">
+            <div
+              class="relative rounded-3xl overflow-hidden border-2 border-gold/50 shadow-2xl group cursor-pointer"
+              onclick="
+                openModal(
+                  'https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/V_image.png',
+                )
+              "
+            >
+              <img
+                src="https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/V_image.png"
+                alt="Estudio de Peinado Sugerido para Damas El Doce"
+                class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+              />
+              <div
+                class="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-gold/40"
+              >
+                <span
+                  class="text-xs font-black text-gold uppercase tracking-widest"
+                  ><i class="fa-solid fa-scissors mr-2"></i> GUÍA OFICIAL DE
+                  PROTOCOLO</span
+                >
+              </div>
+            </div>
+          </div>
 
-                <!-- Right Description for Parents -->
-                <div class="lg:col-span-6 space-y-6">
-                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/30">
-                        <i class="fa-solid fa-sparkles text-gold text-xs"></i>
-                        <span class="text-xs font-black text-gold uppercase tracking-widest">Requerimiento de Imagen Femenina</span>
-                    </div>
-
-                    <h2 class="heavy-title text-3xl sm:text-5xl text-white">
-                        PEINADO SUGERIDO <br><span class="gold-gradient-text">PARA LAS DAMAS</span>
-                    </h2>
-
-                    <p class="text-gray-300 text-base leading-relaxed">
-                        Para mantener la armonía visual, la disciplina estética y destacar los cuellos militares estructurados de la vestimenta británica de 1850, se ha establecido un protocolo oficial de peinado sugerido para todas las integrantes femeninas de la marcha.
-                    </p>
-
-                    <div class="space-y-4">
-                        <div class="p-5 rounded-2xl glass-panel border border-white/10 flex items-start space-x-4">
-                            <div class="w-10 h-10 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
-                            <div>
-                                <h4 class="font-bold text-white text-base">Moño Bajo Pulido (Sleek Low Bun)</h4>
-                                <p class="text-gray-400 text-xs mt-1">Recogido totalmente simétrico a la altura de la nuca, despejando completamente el rostro y el cuello de la chaqueta guerrera.</p>
-                            </div>
-                        </div>
-
-                        <div class="p-5 rounded-2xl glass-panel border border-white/10 flex items-start space-x-4">
-                            <div class="w-10 h-10 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
-                            <div>
-                                <h4 class="font-bold text-white text-base">Raya al Lado Pulcra & Labial Rojo Clásico</h4>
-                                <p class="text-gray-400 text-xs mt-1">División lateral con fijación de alta definición sin cabellos sueltos, complementado opcionalmente con tono de labial carmín refinado Old Money.</p>
-                            </div>
-                        </div>
-
-                        <div class="p-5 rounded-2xl glass-panel border border-white/10 flex items-start space-x-4">
-                            <div class="w-10 h-10 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
-                            <div>
-                                <h4 class="font-bold text-white text-base">Visibilidad Posterior del Bordado</h4>
-                                <p class="text-gray-400 text-xs mt-1">Este peinado permite apreciar el bordado posterior del número romano "XII" grabado en la parte posterior del cuello guerrero.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-4 rounded-xl bg-gold/10 border border-gold/30">
-                        <p class="text-xs text-gold-light font-medium italic">
-                            <i class="fa-solid fa-circle-info mr-2"></i> Estimados Padres de Familia: Solicitamos atentamente asegurar que sus hijas practiquen este peinado para las presentaciones oficiales de la Marching Band.
-                        </p>
-                    </div>
-
-                </div>
-
+          <!-- Right Description for Parents -->
+          <div class="lg:col-span-6 space-y-6">
+            <div
+              class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/30"
+            >
+              <i class="fa-solid fa-sparkles text-gold text-xs"></i>
+              <span
+                class="text-xs font-black text-gold uppercase tracking-widest"
+                >Requerimiento de Imagen Femenina</span
+              >
             </div>
 
+            <h2 class="heavy-title text-3xl sm:text-5xl text-white">
+              PEINADO SUGERIDO <br /><span class="gold-gradient-text"
+                >PARA LAS DAMAS</span
+              >
+            </h2>
+
+            <p class="text-gray-300 text-base leading-relaxed">
+              Para mantener la armonía visual, la disciplina estética y destacar
+              los cuellos militares estructurados de la vestimenta británica de
+              1850, se ha establecido un protocolo oficial de peinado sugerido
+              para todas las integrantes femeninas de la marcha.
+            </p>
+
+            <div class="space-y-4">
+              <div
+                class="p-5 rounded-2xl glass-panel border border-white/10 flex items-start space-x-4"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold text-lg flex-shrink-0"
+                >
+                  1
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">
+                    Moño Bajo Pulido (Sleek Low Bun)
+                  </h4>
+                  <p class="text-gray-400 text-xs mt-1">
+                    Recogido totalmente simétrico a la altura de la nuca,
+                    despejando completamente el rostro y el cuello de la
+                    chaqueta guerrera.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="p-5 rounded-2xl glass-panel border border-white/10 flex items-start space-x-4"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold text-lg flex-shrink-0"
+                >
+                  2
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">
+                    Raya al Lado Pulcra & Labial Rojo Clásico
+                  </h4>
+                  <p class="text-gray-400 text-xs mt-1">
+                    División lateral con fijación de alta definición sin
+                    cabellos sueltos, complementado opcionalmente con tono de
+                    labial carmín refinado Old Money.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="p-5 rounded-2xl glass-panel border border-white/10 flex items-start space-x-4"
+              >
+                <div
+                  class="w-10 h-10 rounded-full bg-gold/20 text-gold flex items-center justify-center font-bold text-lg flex-shrink-0"
+                >
+                  3
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">
+                    Visibilidad Posterior del Bordado
+                  </h4>
+                  <p class="text-gray-400 text-xs mt-1">
+                    Este peinado permite apreciar el bordado posterior del
+                    número romano "XII" grabado en la parte posterior del cuello
+                    guerrero.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-gold/10 border border-gold/30">
+              <p class="text-xs text-gold-light font-medium italic">
+                <i class="fa-solid fa-circle-info mr-2"></i> Estimados Padres de
+                Familia: Solicitamos atentamente asegurar que sus hijas
+                practiquen este peinado para las presentaciones oficiales de la
+                Marching Band.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="py-16 bg-black relative border-t border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            
-            <div class="w-16 h-16 rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center font-cinzel font-black text-gold text-2xl mx-auto mb-6">
-                XII
-            </div>
-
-            <h3 class="heavy-title text-2xl sm:text-3xl text-white mb-2">
-                COLEGIO EVANGÉLICO PRIVADO MIXTO <br>
-                <span class="gold-gradient-text">"LAS DOCE PERLAS"</span>
-            </h3>
-            
-            <p class="text-gray-400 text-xs uppercase tracking-widest mb-8">
-                El Doce Marching Band • Dirección General de Banda & Comité de Padres de Familia
-            </p>
-
-            <div class="max-w-2xl mx-auto p-6 rounded-2xl glass-panel border border-white/10 text-gray-300 text-xs sm:text-sm leading-relaxed mb-10">
-                Agradecemos profundamente el compromiso, el apoyo incondicional y el esfuerzo de cada padre de familia y representante para hacer posible esta histórica transformación. Juntos formamos líderes con principios, elegancia y valores cristianos.
-            </div>
-
-            <div class="text-xs text-gray-500 font-medium">
-                &copy; 2026 Colegio Evangélico Privado Mixto "Las Doce Perlas". Todos los derechos reservados.
-            </div>
-
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div
+          class="w-16 h-16 rounded-full bg-gold/10 border border-gold/40 flex items-center justify-center font-cinzel font-black text-gold text-2xl mx-auto mb-6"
+        >
+          XII
         </div>
+
+        <h3 class="heavy-title text-2xl sm:text-3xl text-white mb-2">
+          COLEGIO EVANGÉLICO PRIVADO MIXTO <br />
+          <span class="gold-gradient-text">"LAS DOCE PERLAS"</span>
+        </h3>
+
+        <p class="text-gray-400 text-xs uppercase tracking-widest mb-8">
+          El Doce Marching Band • Dirección General de Banda & Comité de Padres
+          de Familia
+        </p>
+
+        <div
+          class="max-w-2xl mx-auto p-6 rounded-2xl glass-panel border border-white/10 text-gray-300 text-xs sm:text-sm leading-relaxed mb-10"
+        >
+          Agradecemos profundamente el compromiso, el apoyo incondicional y el
+          esfuerzo de cada padre de familia y representante para hacer posible
+          esta histórica transformación. Juntos formamos líderes con principios,
+          elegancia y valores cristianos.
+        </div>
+
+        <div class="text-xs text-gray-500 font-medium">
+          &copy; 2026 Colegio Evangélico Privado Mixto "Las Doce Perlas". Todos
+          los derechos reservados.
+        </div>
+      </div>
     </footer>
 
-    <div id="imageModal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl hidden flex items-center justify-center p-4" onclick="closeModal()">
-        <button onclick="closeModal()" class="absolute top-6 right-6 text-white text-3xl hover:text-gold transition-colors z-50">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="max-w-5xl w-full max-h-[90vh] flex flex-col items-center justify-center" onclick="event.stopPropagation()">
-            <img id="modalImage" src="" alt="Vista ampliada" class="max-w-full max-h-[80vh] object-contain rounded-xl border border-gold/40 shadow-2xl">
-            <p id="modalCaption" class="text-gold font-bold text-sm uppercase tracking-wider mt-4 text-center"></p>
-        </div>
+    <div
+      id="imageModal"
+      class="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl hidden flex items-center justify-center p-4"
+      onclick="closeModal()"
+    >
+      <button
+        onclick="closeModal()"
+        class="absolute top-6 right-6 text-white text-3xl hover:text-gold transition-colors z-50"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div
+        class="max-w-5xl w-full max-h-[90vh] flex flex-col items-center justify-center"
+        onclick="event.stopPropagation()"
+      >
+        <img
+          id="modalImage"
+          src=""
+          alt="Vista ampliada"
+          class="max-w-full max-h-[80vh] object-contain rounded-xl border border-gold/40 shadow-2xl"
+        />
+        <p
+          id="modalCaption"
+          class="text-gold font-bold text-sm uppercase tracking-wider mt-4 text-center"
+        ></p>
+      </div>
     </div>
 
     <script>
-        // Switch between Primario and Ciclo Basico Uniform tabs
-        function switchTab(tab) {
-            const tabPrimario = document.getElementById('tab-primario');
-            const tabBasico = document.getElementById('tab-basico');
-            const btnPrimario = document.getElementById('btn-primario');
-            const btnBasico = document.getElementById('btn-basico');
+      // Switch between Primario and Ciclo Basico Uniform tabs
+      function switchTab(tab) {
+        const tabPrimario = document.getElementById("tab-primario");
+        const tabBasico = document.getElementById("tab-basico");
+        const btnPrimario = document.getElementById("btn-primario");
+        const btnBasico = document.getElementById("btn-basico");
 
-            if (tab === 'primario') {
-                tabPrimario.classList.remove('hidden');
-                tabBasico.classList.add('hidden');
-                
-                btnPrimario.className = "px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 bg-gold text-black shadow-lg";
-                btnBasico.className = "px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 text-gray-400 hover:text-white";
-            } else {
-                tabPrimario.classList.add('hidden');
-                tabBasico.classList.remove('hidden');
+        if (tab === "primario") {
+          tabPrimario.classList.remove("hidden");
+          tabBasico.classList.add("hidden");
 
-                btnBasico.className = "px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 bg-gold text-black shadow-lg";
-                btnPrimario.className = "px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 text-gray-400 hover:text-white";
-            }
+          btnPrimario.className =
+            "px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 bg-gold text-black shadow-lg";
+          btnBasico.className =
+            "px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 text-gray-400 hover:text-white";
+        } else {
+          tabPrimario.classList.add("hidden");
+          tabBasico.classList.remove("hidden");
+
+          btnBasico.className =
+            "px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 bg-gold text-black shadow-lg";
+          btnPrimario.className =
+            "px-6 py-3 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider transition-all duration-300 text-gray-400 hover:text-white";
+        }
+      }
+
+      // Modal Image Lightbox functionality
+      function openModal(imgSrc) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const modalCaption = document.getElementById("modalCaption");
+
+        modalImg.src = imgSrc;
+
+        if (
+          imgSrc ===
+          "https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/I_image.png"
+        ) {
+          modalCaption.innerText =
+            "UNIFORME OFICIAL - NIVEL PRIMARIO (NEGRO CON GRIS)";
+        } else if (
+          imgSrc ===
+          "https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/II_image.png"
+        ) {
+          modalCaption.innerText =
+            "UNIFORME OFICIAL - NIVEL MEDIO / CICLO BÁSICO (NEGRO CON BEIGE)";
+        } else if (
+          imgSrc ===
+          "https://raw.githubusercontent.com/wuelnerdotexe/el-doce-marching-band/main/assets/V_image.png"
+        ) {
+          modalCaption.innerText =
+            "ESTUDIO DE PEINADO SUGERIDO - MOÑO BAJO PULIDO PARA DAMAS";
+        } else {
+          modalCaption.innerText =
+            "DETALLES Y ACCESORIOS EL DOCE MARCHING BAND";
         }
 
-        // Modal Image Lightbox functionality
-        function openModal(imgSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            const modalCaption = document.getElementById('modalCaption');
+        modal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
 
-            modalImg.src = imgSrc;
-            
-            if (imgSrc === 'input_file_2.png') {
-                modalCaption.innerText = 'UNIFORME OFICIAL - NIVEL PRIMARIO (NEGRO CON GRIS)';
-            } else if (imgSrc === 'input_file_3.png') {
-                modalCaption.innerText = 'UNIFORME OFICIAL - NIVEL MEDIO / CICLO BÁSICO (NEGRO CON BEIGE)';
-            } else if (imgSrc === 'input_file_4.png') {
-                modalCaption.innerText = 'ESTUDIO DE PEINADO SUGERIDO - MOÑO BAJO PULIDO PARA DAMAS';
-            } else {
-                modalCaption.innerText = 'DETALLES Y ACCESORIOS EL DOCE MARCHING BAND';
-            }
+      function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.classList.add("hidden");
+        document.body.style.overflow = "auto";
+      }
 
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
+      // Close on escape key
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          closeModal();
         }
-
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close on escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeModal();
-            }
-        });
+      });
     </script>
-</body>
+  </body>
 </html>
